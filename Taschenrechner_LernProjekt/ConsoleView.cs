@@ -34,7 +34,7 @@ namespace Taschenrechner_LernProjekt
         {
             string eingabe = HoleNaechsteAktionVomBenutzer();
 
-            if (eingabe == "Fertig")
+            if ((eingabe == "Fertig")|(eingabe==""))
             {
                 BenutzerWillBeenden = true;
             }
@@ -47,7 +47,7 @@ namespace Taschenrechner_LernProjekt
 
         private string HoleNaechsteAktionVomBenutzer()
         {
-            Console.Write("Bitte gib eine weitere Zahl ein (Fertig zum Beenden): ");
+            Console.Write("Bitte gib eine weitere Zahl ein ('Fertig' oder Enter zum Beenden): ");
             return Console.ReadLine();
         }
         ///
